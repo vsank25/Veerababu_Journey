@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veerababu Sankarapu - Cybersecurity Professional</title>
+    <!-- Add html2pdf library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #003366;
+            margin-bottom: 5px;
+        }
+        .contact-info {
+            color: #708090;
+            margin-bottom: 10px;
+        }
+        .section-title {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #003366;
+            margin-bottom: 0;
+        }
+        .job-location {
+            font-weight: bold;
+            margin-top: 0;
+        }
+        .job-date {
+            float: right;
+            font-style: italic;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .skills-table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .skills-table td:first-child {
+            width: 30%;
+            font-weight: bold;
+            vertical-align: top;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #003366;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .education-item {
+            margin-bottom: 15px;
+        }
+        /* Download button styles */
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .download-btn:hover {
+            background-color: #004b8f;
+        }
+        
+        /* Simple page break class */
+        .page-break {
+            display: none;
+        }
+        
+        /* Print/PDF styles */
+        @media print {
+            .download-btn {
+                display: none;
+            }
+            body, html {
+                margin: 0;
+                padding: 0;
+                font-size: 10pt;
+            }
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 15mm;
+                max-width: 100%;
+            }
+            /* Important: Enable page breaks for PDF */
+            .page-break {
+                display: block;
+                page-break-before: always;
+                height: 0;
+                margin: 0;
+            }
+            /* Font size adjustments for PDF */
+            h1 {
+                font-size: 16pt;
+            }
+            h2 {
+                font-size: 14pt;
+            }
+            p, li {
+                font-size: 10pt;
+                line-height: 1.4;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Add download button -->
+    <button class="download-btn" id="downloadPdf">Download PDF</button>
+    
+    <div class="container" id="resumeContent">
+        <header>
+            <h1>Veerababu Sankarapu</h1>
+            <div class="contact-info">
+                New Haven, CT 06519 • +1 203-833-0889 • sankarapu.veerababu@gmail.com<br>
+                <a href="https://www.linkedin.com/in/veerababu-sankarapu-44b9a4293/">LinkedIn: veerababu-sankarapu-44b9a4293</a> • 
+                <a href="https://github.com/vsank25">GitHub: vsank25</a> • 
+                <a href="https://veeru-sec.vercel.app">Portfolio: veeru-sec.vercel.app</a>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Professional Summary</h2>
+            <p>
+                Cybersecurity professional with 3+ years of hands-on experience in SIEM operations, threat intelligence, and incident response. Demonstrated expertise in implementing security frameworks (NIST CSF, ISO 27001, CIS Controls) and conducting vulnerability assessments across enterprise environments. Combines technical security knowledge with development background to establish secure coding practices and DevSecOps principles. Currently developing AI Shield Sentinel, an advanced phishing analysis tool with email header inspection capabilities, compliance monitoring (ISO 27001/CIS), and MITRE ATT&CK integration. Seeking a challenging Cybersecurity Analyst role to strengthen organizational security posture through proactive threat detection and mitigation.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <table class="skills-table">
+                <tr>
+                    <td>Security Tools:</td>
+                    <td>Splunk, QRadar, Wireshark, Burp Suite, Nmap, Metasploit, Tenable, Qualys, Kali Linux</td>
+                </tr>
+                <tr>
+                    <td>Cybersecurity Domains:</td>
+                    <td>Threat Intelligence, SIEM Implementation, Incident Response, Vulnerability Management, Email Security, Phishing Analysis, MITRE ATT&CK, Digital Forensics, Malware Analysis</td>
+                </tr>
+                <tr>
+                    <td>Compliance & Frameworks:</td>
+                    <td>NIST CSF, ISO 27001, CIS Controls, SANS, OWASP Top 10, SOC 2</td>
+                </tr>
+                <tr>
+                    <td>Development Skills:</td>
+                    <td>Python, JavaScript, React, Angular, Node.js, HTML/CSS, C/C++, API Security, Secure SDLC, Mobile Frameworks (Android, React Native)</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2 class="section-title">Certifications</h2>
+            <ul>
+                <li>Foundations of Operationalizing MITRE ATT&CK v13 - AttackIQ</li>
+                <li>Cert Prep: ISC2 Certified in Cybersecurity (CC)</li>
+                <li>Mastercard - Cybersecurity Job Simulation</li>
+                <li>CompTIA Security+ (In Progress)</li>
+            </ul>
+        </section>
+
+        <!-- Manual page break -->
+        <div class="page-break"></div>
+
+        <section>
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="job">
+                <p class="job-title">IOT Security Intern <span class="job-date">January 2025 - Present</span></p>
+                <p class="job-location">District of Arts & Education (DAE), New Haven, CT</p>
+                <ul>
+                    <li>Implement IoT device security protocols and conduct comprehensive vulnerability assessments on connected devices</li>
+                    <li>Develop and deliver IoT Cloud Security curriculum focusing on secure deployment practices and threat mitigation strategies</li>
+                    <li>Create security benchmarks and compliance standards for IoT deployments aligned with NIST framework</li>
+                    <li>Monitor IoT network traffic for anomalies and potential security breaches using Wireshark and custom Python tools</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <p class="job-title">Cyber Security Specialist <span class="job-date">June 2024 - August 2024</span></p>
+                <p class="job-location">Guardian Life Insurance - iQ4 Threat Within | NIST, New Haven, CT</p>
+                <ul>
+                    <li>Led strategic initiatives within CT CyberHub project analyzing real-world cybersecurity threats with focus on GRC and SOC operations</li>
+                    <li>Performed Insider Threat Analysis at Tesla using MITRE ATT&CK framework, identifying data exfiltration pathways and implementing detection controls</li>
+                    <li>Applied NIST Cybersecurity Framework to evaluate security posture across all five functional pillars: Identify, Protect, Detect, Respond, and Recover</li>
+                    <li>Designed data breach prevention protocols based on threat intelligence from industry case studies, reducing false positive alerts by 30%</li>
+                    <li>Established compliance monitoring systems ensuring adherence to security policies and regulatory requirements</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <p class="job-title">Security Analyst <span class="job-date">June 2021 - July 2023</span></p>
+                <p class="job-location">SmartGig Technologies Private Limited, Hyderabad, India</p>
+                <ul>
+                    <li>Monitored enterprise networks using Splunk and QRadar SIEM platforms to detect and respond to security incidents in real-time</li>
+                    <li>Implemented GRC frameworks aligned with ISO 27001 and NIST CSF standards for regulatory compliance and risk management</li>
+                    <li>Conducted vulnerability assessments using Tenable and Qualys to identify and remediate critical security gaps</li>
+                    <li>Led incident response activities following SANS methodologies, reducing mean time to resolution by implementing automated security playbooks</li>
+                    <li>Performed threat hunting operations using MITRE ATT&CK framework to proactively identify adversary tactics and techniques</li>
+                    <li>Developed security metrics and KPI dashboards to communicate risk posture to executive leadership</li>
+                </ul>
+            </div>
+
+            <!-- Manual page break -->
+            <div class="page-break"></div>
+            
+            <div class="job">
+                <p class="job-title">Frontend Developer <span class="job-date">January 2021 - June 2021</span></p>
+                <p class="job-location">VNC Digital Services Pvt Ltd & YoLo Connect, India</p>
+                <ul>
+                    <li>Developed Swiftpace, a B2B invoice management application with OCR technology, implementing security features to protect sensitive financial data</li>
+                    <li>Integrated OAuth 2.0 and JWT authentication protocols to secure user credentials and maintain data confidentiality</li>
+                    <li>Implemented secure coding practices to prevent common web vulnerabilities (XSS, CSRF, SQL Injection)</li>
+                    <li>Collaborated with security team to conduct code reviews and vulnerability assessments during the development lifecycle</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Cybersecurity Projects</h2>
+            
+            <div class="project">
+                <p class="job-title">AI Shield Sentinel <span class="job-date">2025 - Present</span></p>
+                <p class="job-location">Personal Project</p>
+                <ul>
+                    <li>Developing an advanced email security tool that performs comprehensive phishing detection and email header analysis</li>
+                    <li>Implemented machine learning algorithms to detect sophisticated phishing attempts with 93% accuracy</li>
+                    <li>Created detailed threat visualization dashboard to present email security findings aligned with MITRE ATT&CK framework</li>
+                    <li>Designed compliance reporting features that align with ISO 27001, CIS Controls, and other security frameworks</li>
+                    <li>Integrated with email gateways to provide real-time protection and automated incident response capabilities</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <p class="job-title">Vulnerability Finder Tool</p>
+                <p class="job-location">University of New Haven</p>
+                <ul>
+                    <li>Developed a Python-based vulnerability scanner interfacing with the NVD API to track CVEs in enterprise environments</li>
+                    <li>Implemented severity scoring based on CVSS metrics with customizable risk thresholds for easier prioritization</li>
+                    <li>Created color-coded vulnerability reports for easy interpretation by security and non-security stakeholders</li>
+                </ul>
+            </div>
+
+            <!-- Manual page break -->
+            <div class="page-break"></div>
+            
+            <div class="project">
+                <p class="job-title">Secure File Transfer System</p>
+                <p class="job-location">University of New Haven</p>
+                <ul>
+                    <li>Built a Python tool for secure file encryption and decryption using AES-256 encryption standards</li>
+                    <li>Implemented secure key exchange protocols and authentication mechanisms to prevent unauthorized access</li>
+                    <li>Developed audit logging capabilities for compliance with data protection regulations and security best practices</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <p class="job-title">Network Traffic Analysis Framework</p>
+                <p class="job-location">University of New Haven</p>
+                <ul>
+                    <li>Created automated network traffic analysis tool using Wireshark and Python for security monitoring</li>
+                    <li>Implemented anomaly detection algorithms to identify potential network intrusions and malicious activities</li>
+                    <li>Developed visualization dashboard for network security monitoring and threat hunting operations</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <p class="job-title">University of New Haven, New Haven, CT</p>
+                <p>Master of Science in Cybersecurity and Networks, GPA: 3.75/4</p>
+                <p>Relevant Coursework: Advanced Network Security, Malware Analysis, Digital Forensics, Penetration Testing, Secure Software Development</p>
+            </div>
+            
+            <div class="education-item">
+                <p class="job-title">SRKR Engineering College, Andhra Pradesh, India</p>
+                <p>Bachelor of Technology in Electrical & Electronics Engineering, GPA: 3.6/4</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Simplify JavaScript for PDF generation -->
+    <script>
+        document.getElementById('downloadPdf').addEventListener('click', function() {
+            // Hide the download button during PDF generation
+            this.style.display = 'none';
+            
+            // Simple options for PDF generation - using minimal options to avoid issues
+            const options = {
+                margin: [10, 10, 10, 10],
+                filename: 'Veerababu_sanakarapu_cv.pdf',
+                image: { type: 'jpeg', quality: 1 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            // Generate the PDF with minimal processing
+            html2pdf()
+                .from(document.getElementById('resumeContent'))
+                .set(options)
+                .save()
+                .then(() => {
+                    // Show the button again when done
+                    document.getElementById('downloadPdf').style.display = 'block';
+                });
+        });
+    </script>
+</body>
+</html>
